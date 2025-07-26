@@ -75,6 +75,40 @@ nav {
   }
 
   #recipe{
-    background-color: brown;
     margin: 0;
+    border-top: 3px solid black;
+    font-family: "Poppins", sans-serif;
   }
+
+  #recipe2{
+    border: 3px solid black;
+  }
+
+.flex-container .falooda{
+  width: 580px;
+  height: 500px;
+}
+.flex-container {
+    display: flex;
+}
+
+.flex-container img{
+  width: 700px;
+  height: 450px;
+}
+.flex-child {
+    flex: 1;
+}  
+.flex-child:first-child {
+    margin-right: 5px;
+} 
+
+.ingredients, .instructions{
+  margin-left: 20px;
+}
+
+.instructions li{
+  line-height: 1.8;
+}
+
+
