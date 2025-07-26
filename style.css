@@ -44,6 +44,7 @@ nav {
     font-size: 200px;
     line-height: 0.4;
     text-indent: 50px;
+    text-shadow: 1px 5px 10px #6d1b0c;
   }
 
   .welcome-msg .left {
