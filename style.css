@@ -1,114 +1,148 @@
-body{
-    background-color: #d17b64;
-    margin: 0;
+body {
+  background-color: #d17b64;
+  margin: 0;
 }
-  
+
 .choco-drip {
-    position: absolute;
-    top: -20px;
-    width: 100%;
-    z-index: 1;
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  z-index: 1;
 }
-  
+
 nav {
-    position: relative;
-    z-index: 2;
-    padding-top: 80px; 
-    padding-right: 15px;
+  position: relative;
+  z-index: 2;
+  padding-top: 80px;
+  padding-right: 15px;
 }
-  
+
 .navigation {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    justify-content: flex-end;
-    margin-top: -20px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+  margin-top: -20px;
 }
-  
-  .navigation li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: sans-serif;
-    text-shadow: 1px 5px 10px #6d1b0c;
+
+.navigation li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-shadow: 1px 5px 10px #6d1b0c;
+}
+
+.navigation li a:hover {
+  color: #c0b0b0;
+}
+
+.welcome-msg {
+  color: #6d1b0c;
+  font-family: "Shrikhand", serif;
+  font-size: 200px;
+  line-height: 0.4;
+  text-indent: 50px;
+  text-shadow: 1px 5px 10px #6d1b0c;
+}
+
+.welcome-msg .left {
+  animation: right_to_left 4s ease;
+}
+
+.welcome-msg .right {
+  text-align: right;
+  animation: slideRight 4s ease-out forwards;
+}
+
+@keyframes right_to_left {
+  from {
+    margin-left: 100px;
   }
 
-  .navigation li a:hover {
-    color: #c0b0b0;
+  to {
+    margin-left: 0px;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100px);
   }
 
-  .welcome-msg{
-    color: #6d1b0c;
-    font-family: "Shrikhand", serif;
-    font-size: 200px;
-    line-height: 0.4;
-    text-indent: 50px;
-    text-shadow: 1px 5px 10px #6d1b0c;
+  to {
+    transform: translateX(0);
   }
+}
 
-  .welcome-msg .left {
-    animation: right_to_left 4s ease;
-  }
-  
-  .welcome-msg .right {
-    text-align: right;
-    animation: slideRight 4s ease-out forwards;
-  }
-  
-  @keyframes right_to_left {
-    from {
-        margin-left:100px ;
-      }
-    to {
-        margin-left:0px ;
-    }
-  }
-  
-  @keyframes slideRight {
-    from {
-      transform: translateX(-100px);
-    }
-    to {
-        transform: translateX(0);
-    }
-  }
+#recipe {
+  margin: 0;
+  border-top: 3px solid black;
+  font-family: "Poppins", sans-serif;
+}
 
-  #recipe{
-    margin: 0;
-    border-top: 3px solid black;
-    font-family: "Poppins", sans-serif;
-  }
+#recipe2 {
+  border: 3px solid black;
+}
 
-  #recipe2{
-    border: 3px solid black;
-  }
-
-.flex-container .falooda{
+.flex-container .falooda {
   width: 580px;
   height: 500px;
 }
+
 .flex-container {
-    display: flex;
+  display: flex;
 }
 
-.flex-container img{
+.flex-container img {
   width: 700px;
   height: 450px;
 }
-.flex-child {
-    flex: 1;
-}  
-.flex-child:first-child {
-    margin-right: 5px;
-} 
 
-.ingredients, .instructions{
+.flex-child {
+  flex: 1;
+}
+
+.flex-child:first-child {
+  margin-right: 5px;
+}
+
+.ingredients,
+.instructions {
   margin-left: 20px;
 }
 
-.instructions li{
+.instructions li {
   line-height: 1.8;
 }
 
+.side-by-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Leckerli One", sans-serif;
+  margin: 10px;
+  position: relative;
+  top: -40px;
+}
 
+.tagline,
+.our-name {
+  margin: 0;
+  white-space: nowrap;
+}
+
+/*footer*/
+footer{
+  background-color: #bc7483;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a{
+  color: rgb(87, 16, 16);
+}
