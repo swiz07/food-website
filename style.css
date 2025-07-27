@@ -1,114 +1,112 @@
 body{
-    background-color: #d17b64;
-    margin: 0;
+  background-color: #d17b64;
+  margin: 0;
 }
-  
+
 .choco-drip {
-    position: absolute;
-    top: -20px;
-    width: 100%;
-    z-index: 1;
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  z-index: 1;
 }
-  
+
 nav {
-    position: relative;
-    z-index: 2;
-    padding-top: 80px; 
-    padding-right: 15px;
+  position: relative;
+  z-index: 2;
+  padding-top: 80px; 
+  padding-right: 15px;
 }
-  
+
 .navigation {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    justify-content: flex-end;
-    margin-top: -20px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+  margin-top: -20px;
 }
-  
-  .navigation li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: sans-serif;
-    text-shadow: 1px 5px 10px #6d1b0c;
-  }
 
-  .navigation li a:hover {
-    color: #c0b0b0;
-  }
+.navigation li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-shadow: 1px 5px 10px #6d1b0c;
+}
 
-  .welcome-msg{
-    color: #6d1b0c;
-    font-family: "Shrikhand", serif;
-    font-size: 200px;
-    line-height: 0.4;
-    text-indent: 50px;
-    text-shadow: 1px 5px 10px #6d1b0c;
-  }
+.navigation li a:hover {
+  color: #c0b0b0;
+}
 
-  .welcome-msg .left {
-    animation: right_to_left 4s ease;
-  }
-  
-  .welcome-msg .right {
-    text-align: right;
-    animation: slideRight 4s ease-out forwards;
-  }
-  
-  @keyframes right_to_left {
-    from {
-        margin-left:100px ;
-      }
-    to {
-        margin-left:0px ;
+.welcome-msg{
+  color: #6d1b0c;
+  font-family: "Shrikhand", serif;
+  font-size: 200px;
+  line-height: 0.4;
+  text-indent: 50px;
+  text-shadow: 1px 5px 10px #6d1b0c;
+}
+
+.welcome-msg .left {
+  animation: right_to_left 4s ease;
+}
+
+.welcome-msg .right {
+  text-align: right;
+  animation: slideRight 4s ease-out forwards;
+}
+
+@keyframes right_to_left {
+  from {
+      margin-left:100px ;
     }
+  to {
+      margin-left:0px ;
   }
-  
-  @keyframes slideRight {
-    from {
-      transform: translateX(-100px);
-    }
-    to {
-        transform: translateX(0);
-    }
-  }
+}
 
-  #recipe{
-    margin: 0;
-    border-top: 3px solid black;
-    font-family: "Poppins", sans-serif;
+@keyframes slideRight {
+  from {
+    transform: translateX(-100px);
   }
+  to {
+      transform: translateX(0);
+  }
+}
 
-  #recipe2{
-    border: 3px solid black;
-  }
+#recipe{
+  margin: 0;
+  border-top: 3px solid black;
+  font-family: "Poppins", sans-serif;
+}
+
+#recipe2{
+  border: 3px solid black;
+}
 
 .flex-container .falooda{
-  width: 580px;
-  height: 500px;
+width: 580px;
+height: 500px;
 }
 .flex-container {
-    display: flex;
+  display: flex;
 }
 
 .flex-container img{
-  width: 700px;
-  height: 450px;
+width: 700px;
+height: 450px;
 }
 .flex-child {
-    flex: 1;
+  flex: 1;
 }  
 .flex-child:first-child {
-    margin-right: 5px;
+  margin-right: 5px;
 } 
 
 .ingredients, .instructions{
-  margin-left: 20px;
+margin-left: 20px;
 }
 
 .instructions li{
-  line-height: 1.8;
+line-height: 1.8;
 }
-
-
