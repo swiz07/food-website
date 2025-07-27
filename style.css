@@ -76,6 +76,8 @@ nav {
   }
 }
 
+
+/*recipe section*/
 #recipe {
   margin: 0;
   border-top: 3px solid black;
@@ -145,4 +147,37 @@ footer{
 
 footer a{
   color: rgb(87, 16, 16);
+}
+
+/***Top button (home)***/
+
+#top-btn{
+  position: fixed;
+  top: 120px;
+  right: 10px;
+  background-color: #fcaf77;
+  color:black;
+  padding: 10px 20px;
+  border: 3px solid #bc7483;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+
+#recipe1 img, #recipe2 img{
+  animation: fade-in linear;
+  animation-timeline:view() ;
+}
+
+@keyframes fade-in{
+  from {
+    scale:0.8;
+    opacity: 0;
+  }
+  to{
+    scale:1;
+    opacity: 1;
+  }
 }
